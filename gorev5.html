@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet " href="middleSide.css">
+        <link rel="stylesheet" href="leftSide.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="metrics.css">
+        <link rel="stylesheet" href="rightSide.css">
+        <link rel="stylesheet" href="datepicker.css">
+    <style type="text/css">/* Chart.js */
+    @keyframes 
+    chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,
+    .chartjs-size-monitor-expand,
+    .chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;
+        overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}
+    .chartjs-size-monitor-expand>
+    div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>
+    div{position:absolute;width:200%;height:200%;left:0;top:0}
+    </style>
+    </head>
+<body>
+    <div class="leftSide" >
+        <div class="eye">
+            <img src="icon/eye-solid.svg" alt="eye" id="eyeImage">
+            <br>
+            <hr>
+        </div>
+        <div class="middle">
+            <img src="icon/heart-pulse-solid.svg" alt="heart" class="clickable">
+            <img src="icon/satellite-dish-solid.svg" alt="satellite" class="clickable">
+            <img src="icon/calendar-solid.svg" alt="calendar"  class="clickable">
+            <img src="icon/sliders-solid.svg" alt="slider"  class="clickable">
+            <img src="icon/comments-regular.svg" alt="comments"  class="clickable">
+        </div>
+ <div class="end">
+    <img src="icon/arrow-right-from-bracket-solid.svg" alt="out" id="outImage">
+ </div>
+ 
+
+    </div>
+    <div class="middleSide">
+        <div class="middleSideBar">
+            <div class="listbar">
+              <img src="icon/list-solid.svg">
+              <img src="icon/bars-solid.svg">
+            </div>
+            <div class="last">
+                <select name="last" id="last" >
+                    <option>last 15 days</option>
+                    <option>last 7 days</option>
+                    
+                </select>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="media">
+            <div class="card" id="facebook" >
+                <i class="fab fa-facebook"></i>
+                <p>Facebook</p>
+                <span>10K </span>
+              </div>
+              <div class="card" id="twitter">
+                <i class="fab fa-twitter"></i>
+                <p>Twitter</p>
+                <span>20K </span>
+              </div>
+              <div class="card" id="instagram">
+                <i class="fab fa-instagram"></i>
+                <p>Instagram</p>
+                <span>30K </span>
+              </div>
+              <div class="card" id="youtube">
+                <i class="fab fa-youtube"></i>
+                <p>YouTube</p>
+                <span>40K </span>
+              </div>
+        </div>
+        <div class="mainWrapper" >
+
+            <div class="contentWrapper">
+              <div class="chartMainWrapper">
+              <div class="headerWrapper">
+                <p class="title">Instagram Subscribers</p>
+                <div class="infoWrapper">
+                    <div class="gainbox">
+                        
+                        <span class="gain-circle green"></span>
+                        <span class="text">Gained</span>
+                    </div>
+                    <div class="lostbox">
+                        
+                        <span class="gain-circle red"></span>
+                        <span class="text">Lost</span>
+                    </div>
+                </div>
+              </div> 
+              <div class="mainContentWrapper"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                <canvas width="1112" height="333" id="chart1" style="display: block; height: 267px; width: 890px;" class="chartjs-render-monitor"></canvas>
+              </div>
+            </div> 
+            </div>
+        </div>
+        <div class="metrics">
+          <div class="keyMetrics">
+
+          <h2><strong>Key Metrics</strong></h2>
+          <br>
+          <div class="p">
+          <p>Clicks</p>
+          <p>10k</p>
+          </div>
+          <hr>
+          <div class="p">
+          <p>Likes</p>
+          <p>680</p>
+        </div>
+          <hr>
+        <div class="p">
+          <p >Followers</p>
+          <p >8k</p>
+        </div>
+          <hr>
+          <div class="p">
+            <p>Impression</p>
+            <p>5500</p>
+          </div>
+          </div>
+          <div class="box">
+            <div class="boxx">
+              <p >Engaged Users</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p style="font-size:50px;"><strong>12.2k</strong></p>
+              <br>
+              <br>
+
+              <p>19%</p>
+            </div>
+            <div class="boxx">
+              <p>Page Impressions</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p style="font-size:50px;"><strong>8.6k</strong></p>
+              <br>
+              <br>
+
+              <p>9%</p>
+            </div>
+          </div>
+      </div>
+        </div>
+
+
+    <div class="rightSide" >
+      <div class="top">
+        <img  class="bell" src="icon/bell-regular.svg">
+        <p><img src="icon/gift-solid.svg">2 NEW UPDATES</p>
+        <img class="user" src="icon/user-regular.svg">
+      </div>
+      <div class="person">
+          <img src="icon/kisi.png">
+      </div>
+      <div class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg> 
+            </span>
+            
+            <span id="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
+            </span>
+           </div>
+        </header>
+         
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+      <div class="users">
+        <div>
+          <img src="icon/users.png">
+        </div>
+        
+      </div>
+    </div>
+    <script src="./chart.js"></script>
+    <script src="./leftSide.js"></script>
+    <script src="media.js"></script>
+    <script src="datepicker.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.leftSide {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.eye, .middle, .end {
+    margin-bottom: 20px;
+    width : 30px;
+    height: 30px;
+    :hover{
+        background-color: lightblue;
+    }
+}
+
+.middle img {
+    padding-bottom: 15px;
+    margin-right: 10px;
+}
+
+.end {
+    margin-top: auto;
+}

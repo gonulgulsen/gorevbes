@@ -1,0 +1,27 @@
+.middleSide{
+   
+    background-color: whitesmoke;
+}
+.middleSideBar{
+    flex:1;
+    margin-left: 0;
+ 
+    justify-content: space-betwween;
+    gap:10px;
+}
+.middleSideBar img{
+    all:unset;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    
+    
+}
+.middleSideBar .listbar{
+display: flex;
+justify-content: space-between;
+float: left;
+}
+.middleSideBar .last{
+    float:right;
+}

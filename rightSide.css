@@ -1,0 +1,30 @@
+.rightSide{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top img{
+    width: 25px;
+    height:25px;
+}
+.top p{
+    all:unset;
+    padding-top: 0;
+    border: 1px solid salmon;
+    background-color: salmon;
+    border-radius:40px;
+    align-items: center;
+}
+.person img{
+    
+    width: 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}

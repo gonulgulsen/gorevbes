@@ -1,0 +1,59 @@
+.media {
+    all:unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    height: 30svh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .card {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    
+    margin: 0 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    background-color: grey;
+  }
+  
+  .card i {
+    font-size: 40px;
+  
+  }
+  
+  .card p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card span {
+    font-size: 14px;
+    color:black;
+  }
+  
+  #facebook {
+    border: 2px solid #3b5998;
+  }
+  
+  #twitter {
+    border: 2px solid #1da1f2;
+  }
+  
+  #instagram {
+    border: 2px solid #c13584;
+  }
+  
+  #youtube {
+    border: 2px solid #ff0000;
+  }
+  
